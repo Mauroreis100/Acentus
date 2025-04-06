@@ -1,0 +1,20 @@
+  {
+    "manifest_version": 3,
+    "name": "Acentus",
+    "version": "1.0",
+    "description": "Insere caracteres com acentos em campos de texto.",
+    "permissions": ["scripting", "activeTab", "storage", "input"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
